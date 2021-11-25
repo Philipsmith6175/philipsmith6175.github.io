@@ -1,4 +1,4 @@
-# philipsmith6175.github.io
+# WELCOME TO PHILIP SMITH PAGE.
   ### 👋 Hi, I’m Philip Smith.
 ### 👀 I’m interested in Contributing & developing.
 ### 🌱 I’m currently learning 🤭🤭.
@@ -29,8 +29,3 @@ Click WA logo to Join Philip's Group, the creator is Philip🤭👇
 </div>
 <p align="center">
 
-## 👨‍💻 Developer & Contributor 👨‍💻
-
-[![Philip Smith](https://github.com/Philipsmith617.png?size=100)](https://github.com/Philipsmith617)
-[Philip-Smith](https://github.com/Philipsmith617)
-Author: Developer, Base, Bug Fixes, Commits, Modules, feel free to reach me.
