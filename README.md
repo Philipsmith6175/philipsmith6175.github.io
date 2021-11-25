@@ -1,5 +1,5 @@
 # WELCOME TO PHILIP SMITH PAGE.
-  ### 👋 Hi, I’m Philip Smith.
+### 👋 Hi, I’m Philip Smith.
 ### 👀 I’m interested in Contributing & developing.
 ### 🌱 I’m currently learning....🤭🤭.
 ### 💞️ I’m looking to collaborate on all projects.
@@ -20,7 +20,7 @@
 </div>
 <p align="center">
 
-### What would you like to do SIR/MA? 
-#### Download Movies
-### Download Songs 
-#### Inquire about Philip Smith.
+### ❤️What would you like to do SIR/MA? 
+### ❤️Download Movies
+### ❤️Download Songs 
+### ❤️Inquire about Philip Smith.
