@@ -8,7 +8,7 @@
 <p align="center">
     <a href="https://github.com/Philipsmith617">
         <img
-            src="https://readme-typing-svg.herokuapp.com?size=33&width=1000&lines=Welcome+To+my+Profile+Thank+You+For+Visiting...+let+us+know+how+we+can+help+you+...+scroll+down+please...."
+            src="https://readme-typing-svg.herokuapp.com?size=33&width=1000&lines=Welcome+To+my+Profile+Thank+You+For+Visiting+...."
             alt="Typing SVG"
 >
         </a>
