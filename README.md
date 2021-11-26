@@ -34,7 +34,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
    <button onclick="typeWriter()" style="border-radius: 10px; background: none; opacity: 10px;"> <font id="demo" face="aladin" size="6" color="white"> -Qoutes-<br></font> </button>
 <script>
    var i = 0;
-   var txt = 'It's the you in you that brings out the you in you which makes you the you in you that you are...Be yourself, don't please anyone...';
+   var txt = 'NEVER STOP LEARNING, CAUSE LIFE NEVER STOPS TEACHING...';
    var speed = 70;
 
    function typeWriter() {
