@@ -20,7 +20,7 @@
 </div>
 <p align="center">
 
-### ❤️What would you like to do SIR/MA? 
-### ❤️Download Movies
-### ❤️Download Songs 
-### ❤️Inquire about Philip Smith.
+### What would you like to do SIR/MA? 
+### Download Movies
+### Download Songs 
+### [Inquire about Philip Smith.](https://sites.google.com/view/whoisphilipsmith/home)
