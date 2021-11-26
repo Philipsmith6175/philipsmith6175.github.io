@@ -56,7 +56,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
 <footer>
 <img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
 </footer>
-<br><img src="https://s2.gifyu.com/images/necessarydisorder.gif" width="500" height="450"><br><b><font size="6" color="red" face="jolly Lodger">[+] <span class="one">! NIGERIAN</span> <small><small>}<span class="one">JAVA</span>{</small></small> <span class="one">SECURITY !</span>  [+]</font></b><br><br>
+<br><img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="500" height="450"><br><b><font size="6" color="red" face="jolly Lodger">[+] <span class="one">! NIGERIAN</span> <small><small>}<span class="one">JAVA</span>{</small></small> <span class="one">SECURITY !</span>  [+]</font></b><br><br>
     <table background="white">
 <img src="https://downloads.vecteezy.com/system/protected/files/001/200/436/vecteezy_music-player-button-play_1200436.png" height="50px" width="50px">&nbsp; &nbsp; &nbsp;
 <font color="white" face="aladin" size="8" style="margin: 0 auto; margin-bottom: 50px;">Music Settings</font>
