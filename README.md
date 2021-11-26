@@ -54,7 +54,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
    }
    </script> 
 <footer>
-<img src="https://i.postimg.cc/wMDjmbym/siyahyuruyen.gif" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
+<img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
 </footer>
 <br><img src="https://s2.gifyu.com/images/necessarydisorder.gif" width="500" height="450"><br><b><font size="6" color="red" face="jolly Lodger">[+] <span class="one">! NIGERIAN</span> <small><small>}<span class="one">JAVA</span>{</small></small> <span class="one">SECURITY !</span>  [+]</font></b><br><br>
     <table background="white">
