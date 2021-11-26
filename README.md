@@ -12,7 +12,7 @@
             alt="Typing SVG"
 >
         </a>
-</style>
+
 <center>
 <img class="image" src="https://www.linkpicture.com/q/Screenshot_20211125-213114_1.jpg" height="600" width="980"><br>
 <script>
@@ -22,7 +22,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
 <div class="blink">
 <div id="back"><font size="20">
 <b>
-  <span class="one">[+] Thank You For Visiting</span><span class="two"> Philip Smith [+]</span>
+  <span class="one">✨ Thank You For Visiting</span><span class="two"> Philip Smith ✨</span>
   </b>
 </font>
 </div>
@@ -34,7 +34,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
    <button onclick="typeWriter()" style="border-radius: 10px; background: none; opacity: 10px;"> <font id="demo" face="aladin" size="6" color="white"> -Qoutes-<br></font> </button>
 <script>
    var i = 0;
-   var txt = 'NEVER STOP LEARNING, BECAUSE LIFE NEVER STOPS TEACHING...';
+   var txt = 'It's the you in you that brings out the you in you which makes you the you in you that you are...Be yourself, don't please anyone...';
    var speed = 70;
 
    function typeWriter() {
@@ -46,7 +46,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
    }
    </script> 
 <footer>
-<img src="https://www.linkpicture.com/q/IMG-20211102-WA0056.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
+<img src="https://www.linkpicture.com/q/IMG-20211102-WA0056.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone MJ❤️ [-]</h2>
 </footer>
 <br><img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="500" height="450"><br><b><font size="6" color="red" face="jolly Lodger">[+] <span class="one">! NIGERIAN</span> <small><small>}<span class="one">JAVA</span>{</small></small> <span class="one">SECURITY !</span>  [+]</font></b><br><br>
     <table background="white">
@@ -106,7 +106,5 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
     }
     </script>
    <audio id="lagu" src="https://h.top4top.io/m_1617voipz0.mp3"></audio>
-   </body>
-</td>
-</table>
-</html>
+   
+
