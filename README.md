@@ -12,14 +12,6 @@
             alt="Typing SVG"
 >
         </a>
-</p>
-
-<div align="center">
-  <img src="https://www.linkpicture.com/q/Screenshot_20211125-213114_1.jpg" width="200" height="200">
-  <h1>Philip_Smith</h1>
-</div>
-<p align="center">
-
 </style>
 <center>
 <img class="image" src="https://www.linkpicture.com/q/Screenshot_20211125-213114_1.jpg" height="600" width="980"><br>
@@ -36,7 +28,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
 </div>
 </div>
 <center>
-  <b><span class="one">[+]<img src="https://s2.gifyu.com/images/Valentines-Day-Letter-for-the-Heartbroken.gif" width="100" height="100">[+]</span></b>
+  <b><span class="one">[+]<img src="https://www.linkpicture.com/q/e70da31e283d4653a2bf4c5b2b93fb25_1.jpg" width="100" height="100">[+]</span></b>
   </center>
 <hr color="black">
    <button onclick="typeWriter()" style="border-radius: 10px; background: none; opacity: 10px;"> <font id="demo" face="aladin" size="6" color="white"> -Qoutes-<br></font> </button>
@@ -54,7 +46,7 @@ swal("Thank You Message", "Thank You For Visiting Us, Use Earphones & Click Play
    }
    </script> 
 <footer>
-<img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
+<img src="https://www.linkpicture.com/q/IMG-20211102-WA0056.jpg" width="70%"><h2>  [-] I am Fine & I am Strong &  I am Not Alone [-]</h2>
 </footer>
 <br><img src="https://www.linkpicture.com/q/IMG-20211102-WA0061.jpg" width="500" height="450"><br><b><font size="6" color="red" face="jolly Lodger">[+] <span class="one">! NIGERIAN</span> <small><small>}<span class="one">JAVA</span>{</small></small> <span class="one">SECURITY !</span>  [+]</font></b><br><br>
     <table background="white">
