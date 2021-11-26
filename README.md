@@ -1,9 +1,9 @@
 # WELCOME TO PHILIP SMITH PAGE.
 ### 👋 Hi, I’m Philip Smith.
-### 👀 I’m interested in Contributing & developing.
-### 🌱 I’m currently learning....🤭🤭.
+### 👀 This website is verified don't panic.
+### 🌱 I’m only a sad developer, feel at home, download what you see😃....🤭🤭.
 ### 💞️ I’m looking to collaborate on all projects.
-### 📫 How to reach me ...🤙 Later things😉
+### 📫 How to reach me ...🤙 Later things😉 Scroll down first..😅
 
 <p align="center">
     <a href="https://github.com/Philipsmith617">
@@ -19,3 +19,4 @@
   <h1>Philip_Smith</h1>
 </div>
 <p align="center">
+
