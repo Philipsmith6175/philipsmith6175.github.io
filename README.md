@@ -1,4 +1,4 @@
-# WELCOME TO PHILIP SMITH PAGE.
+# WELCOME TO PHILIP SMITH WEBSITE.
 ### 👋 Hi, I’m Philip Smith.
 ### 👀 This website is verified don't panic.
 ### 🌱 I’m only a sad developer, feel at home, download what you see😃....🤭🤭.
