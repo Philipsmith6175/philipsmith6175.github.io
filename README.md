@@ -19,8 +19,3 @@
   <h1>Philip_Smith</h1>
 </div>
 <p align="center">
-
-### What would you like to do SIR/MA? 
-### Download Movies
-### Download Songs 
-### [Inquire about Philip Smith.](https://sites.google.com/view/whoisphilipsmith/home)
