@@ -1,0 +1,30 @@
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #E0E3DA;
+}
+
+body {
+  color: #000;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+h1 {
+  color: #A593E0;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.site-footer {
+  color: #777;
+  font-size: 73%;
+  text-align: center;
+  border-top: 1px dotted #CCC;
+  margin-top: 30px;
+  padding: 20px;
+}
