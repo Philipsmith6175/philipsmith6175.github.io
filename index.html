@@ -123,6 +123,53 @@ Imagine you dropping a token of 1,000. If you beat your opponent once, you get 2
            START EARNING NOW! START CHALLENGE BUTTON FOR MORE INFO. 
    </p> Click here to Chat with Support & REGISTER WITH 1,000 naira.</p> 👉<a href="https://api.whatsapp.com/send?phone=79626801358&text=Hello+support,+good+day!+I+would+like+to+join+the+GEM++(Game+Earning+website)+Team." class="btn-btn-primary btn-lg">REGISTER NOW</a>
 
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'pay',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"To register as soon as possible, provide your account info & join the team. Registration costs 1,000 naira.","amount":{"currency_code":"USD","value":2.43}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+
 
 <script type="text/javascript">
 var infolinks_pid = 3353708;
