@@ -321,6 +321,22 @@
 
 <div>
 
+const pageProgressBar = document.querySelector(".progress-bar")
+document.addEventListener("scroll", () => {
+  const scrolledPercentage =
+      (scrollContainer().scrollTop /
+        (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+      100;
+  
+  pageProgressBar.style.width = `${scrolledPercentage}%`
+  
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
 <img src="https://i.postimg.cc/rpq32Qcz/IMG-20211226-WA0064.jpg" width="400" height="400">
 <div class="button">
 <strong> 15,000N. </strong>
