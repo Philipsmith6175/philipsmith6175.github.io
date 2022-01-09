@@ -103,6 +103,29 @@
 <strong> NOTICE! </strong> 
 </p> WE DO NOT OWN ANY DOWNLOAD LINKS. Our privacy policy is on the homepage of this site. & We do not support copyright infringement. </p>
 
+nk: https://jsfiddle.net/p4mksfm1/
+
+<audio id="testAudio" hidden src="https://www.mboxdrive.com/alive.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playAudio">Play</button>
+
+<script type="text/javascript">
+document.getElementById("playAudio").addEventListener("click", function(){
+    var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
+
+});
+</script>
+
 <iframe width="400" height="400" 
 src="https://youtube.com/embed/mCxDdHL4NjM"> frameborder="0" allowfullscreen>
 </iframe>
