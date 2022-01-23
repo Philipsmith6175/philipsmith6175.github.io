@@ -110,31 +110,12 @@ document.getElementById("playAudio").addEventListener("click", function(){
 });
 </script>
 
-</div>
-<strong> Peru Remix By Fireboy & Ed Sheeran. </strong>
-</div>
-<audio id="testAudio" hidden src="https://mailboxdrive.com/mp3s/5463/" type="audio/mpeg">
-</audio>
-
-<button id="playAudio">Play</button>
-
-<script type="text/javascript">
-document.getElementById("playAudio").addEventListener("click", function(){
-    var audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    this.className = "";
-    this.innerHTML = "Play"
-    audio.pause();
-  }else{
-    this.className = "is-playing";
-    this.innerHTML = "Pause";
-    audio.play();
-  }
-
-});
-</script>
-
-</div>
+<embed
+	src="https://www.mboxdrive.com/Ezan-kl_jnhAosC6yj0.mp3"
+	width="180"
+	height="90"
+	loop="false"
+	autostart="false">
 
 
 
@@ -149,11 +130,18 @@ document.getElementById("playAudio").addEventListener("click", function(){
 
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-214444597-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+
+
+
+
+
+
+
+
+
+
+
+ = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
