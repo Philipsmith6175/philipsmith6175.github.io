@@ -71,3 +71,70 @@
           </li>
         </ul>
       </nav>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                🎵 MUSIC PAGE 🎶
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body"><p class="lead">
+
+
+
+<audio id="testAudio" hidden src="https://www.mboxdrive.com/Ezan-kl_jnhAosC6yj0.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playAudio">Play</button>
+
+<script type="text/javascript">
+document.getElementById("playAudio").addEventListener("click", function(){
+    var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
+
+});
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-214444597-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-214444597-1');
+</script>
+
+<div>
+   <div class="row"
+  <footer class="border-top mt-5 py-4 text-center text-muted small">
+    <p>&copy; 2022 Game Site</p>
+    </footer>
+      
