@@ -89,26 +89,6 @@
 <strong> Plug In your earpiece, turn on your Bluetooth, cause you're about to hear some bangers!!!</strong>
 <strong> Ezan Kele By Abobolais. Turn off your data😉, you don't need that to listen by clicking the play button. </strong>
 </div>
-<audio id="testAudio" hidden src="https://www.mboxdrive.com/Ezan-kl_jnhAosC6yj0.mp3" type="audio/mpeg">
-</audio>
-
-<button id="playAudio">Play</button>
-
-<script type="text/javascript">
-document.getElementById("playAudio").addEventListener("click", function(){
-    var audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    this.className = "";
-    this.innerHTML = "Play"
-    audio.pause();
-  }else{
-    this.className = "is-playing";
-    this.innerHTML = "Pause";
-    audio.play();
-  }
-
-});
-</script>
 
 <embed
 	src="https://www.mboxdrive.com/Ezan-kl_jnhAosC6yj0.mp3"
@@ -118,32 +98,15 @@ document.getElementById("playAudio").addEventListener("click", function(){
 	autostart="false">
 </div>
 
-<div class =“audio-container" id =“audio-container">
-<div class=”audio-info”>
-<h4 id=”title”></h4>
-<div class=”audio-container” id=”audio-container”>
-<div class=”audio-info”>
-<h4 id=”title”></h4>
-<div class=”progress-container” id=”progress-container”>
-<div class=”progress” id=”progress”></div>
-</div>
-</div>
-<audio src=”https://www.mboxdrive.com/Ezan-kl_jnhAosC6yj0.mp3" id=”audio”></audio>
-<img src=”https://i.postimg.cc/VLqxRWHs/FB-IMG-1642974753681.jpg” alt=”music-cover” id=”cover”>
-<div class=”navigation”>
-<button id=”prev” class=”action-btn”>
-<i class=”fas fa-backward”></i>
-</button>
-<button id=”play” class=”action-btn action-btn-big”>
-<i class=”fas fa-play”></i>
-<button id=”next” class=”action-btn”>
-<i class=”fas fa-forward”></i>
-</button>
+<div data-video="VIDEO_ID"
+         data-autoplay="0"
+         data-loop="1"
+         id="youtube-audio">
+  </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
 </div>
-
-
-
 
 
 
