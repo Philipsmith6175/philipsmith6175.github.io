@@ -1,3 +1,8 @@
+
+
+
+
+
 # WELCOME TO PHILIP SMITH WEBSITE.
 ### 👋 Hi, I’m Philip Smith.
 ### 👀 This website is verified don't panic.
