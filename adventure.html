@@ -1,4 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Battery Meter!</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="bowser.js"></script>
+<style>
+li {
+list-style-type: none;
+}
+.lowercase {
+text-transform: lowercase;
+}
+.progress-bar span {
+background: rgba(0, 0, 0, 0.2);
+padding: 4px 4px;
+}
+</style>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+$(function() {
 
+  function minutesToStr(minutes) {  
+    var sign = "";  
+    if(minutes < 0){  
+      sign = "-";  
+    }  
+    var hours = leftPad(Math.floor(Math.abs(minutes) / 60));  
+    var minutes = leftPad(Math.abs(minutes) % 60);  
+    return Math.round(hours) + " hours and " + Math.round(minutes) + " minutes";  
+  }
+  function leftPad(number) {    
+    return ((number < 10 && number >= 0) ? '0' : '') + number;  
+  }
+
+function updateChrome(battery) {
+$(".progress-bar span").text(Math.floor(battery.level*100) + "%");
+$(".progress-bar").css("width", battery.level*100 + "%").attr("aria-valuenow", battery.level*100);
+$("#discharging").text( minutesToStr(battery.dischargingTime/61) );
+$("#charging").text(battery.charging);
+if(battery.level*100 <= 100 && battery.level*100 >= 66) {
+$(".progress-bar").removeClass("progress-bar-warning progress-bar-danger").addClass("progress-bar-success");
+}
+if(battery.level*100 < 66 && battery.level*100 >= 33) {
+$(".progress-bar").removeClass("progress-bar-success progress-bar-danger").addClass("progress-bar-warning");
+}
+if(battery.level*100 <= 33 && battery.level*100 >= 0) {
+$(".progress-bar").removeClass("progress-bar-success progress-bar-warning").addClass("progress-bar-danger");
+}
+if(battery.charging || battery.charging == true) {
+$(".progress-bar").addClass("progress-bar-striped active");
+} else {
+$(".progress-bar").removeClass("progress-bar-striped active");
+}
+}
+
+function updateFirefox() {
+var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery || navigator.msBattery || null;
+$(".progress-bar span").text(Math.floor(battery.level*100) + "%");
+$(".progress-bar").css("width", battery.level*100 + "%").attr("aria-valuenow", battery.level*100);
+$("#discharging").text( minutesToStr(battery.dischargingTime/61) );
+$("#charging").text(battery.charging);
+if(battery.level*100 <= 100 && battery.level*100 >= 66) {
+$(".progress-bar").removeClass("progress-bar-warning progress-bar-danger").addClass("progress-bar-success");
+}
+if(battery.level*100 < 66 && battery.level*100 >= 33) {
+$(".progress-bar").removeClass("progress-bar-success progress-bar-danger").addClass("progress-bar-warning");
+}
+if(battery.level*100 <= 33 && battery.level*100 >= 0) {
+$(".progress-bar").removeClass("progress-bar-success progress-bar-warning").addClass("progress-bar-danger");
+}
+if(battery.charging || battery.charging == true) {
+$(".progress-bar").addClass("progress-bar-striped active");
+} else {
+$(".progress-bar").removeClass("progress-bar-striped active");
+}
+}
+
+if(window.chrome) {
+navigator.getBattery().then(function(battery) {
+updateChrome(battery);
+
+battery.onchargingchange = function() {
+updateChrome(battery);
+}
+
+battery.onlevelchange = function() {
+updateChrome(battery);
+}
+
+battery.ondischargingtimechange = function() {
+updateChrome(battery);
+};
+});
+}
+
+if(navigator.userAgent.indexOf("Firefox") !== -1) {
+var battery = navigator.battery || navigator.mozBattery || navigator.webkitBattery;
+window.onload = battery.onlevelchange = battery.onchargingchange = function() {
+updateFirefox();
+}
+}
+
+$("#meter").show();
+$("#no-safari").hide();
+if(bowser.safari || bowser.iphone) {
+$("#no-safari").show();
+$("#meter").hide();
+if(bowser.safari) {
+$("#no-safari span").text("By the way, nice computer. :)");
+}
+if(bowser.iphone) {
+$("#no-safari span").text("iOS sucks!");
+}
+}
+
+});
+</script>
+</head>
+<body>
+
+<center>
+
+<div id="no-safari"><img src="safari.png" width="10%"><h2>Safari?</h2><h4>Safari doesn't have a Battery API of their own yet. Try using <a href="http://www.google.com/chrome/">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox.</a></h4><span></span></div>
+
+<div id="meter">
+<h1>Battery Meter!</h1>
+<h3>Only works with Chrome and Firefox.</h3>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span></span></div>
+</div>
+<h2>More info</h2>
+<table>
+<tr>
+<td>Is it Charging?: <b id="charging" class="lowercase"></b></td>
+</tr>
+<tr>
+<td>Time Left on Charge: <b id="discharging" class="lowercase"></b> (this may not always be correct)</td>
+</tr>
+</table>
+<h2>How does this work?</h2>
+<p>Chrome and Firefox both have their own battery APIs, which are used differently. Battery Meter uses both of those APIs. It detects if you are using Chrome or Firefox.</p>
+</div>
+
+<h2>GitHub</h2>
+<p>We're on GitHub! <a href="https://github.com/theawesomecoder61/Battery-Meter">See it here.</a></p>
+
+<small>&copy; 2014 <a href="http://tac61.webstarts.com">theawesomecoder61</a></small>
+</center>
+
+</body>
+</html>
 
 
 <html lang="en">
