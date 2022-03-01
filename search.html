@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+
+    #myUL {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myUL li a {
+      border: 1px solid #ddd;
+      margin-top: -1px; /* Prevent double borders */
+      background-color: #f6f6f6;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      display: block
+    }
+
+    #myUL li a:hover:not(.header) {
+      background-color: #eee;
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2>My Phonebook</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <ul id="myUL">
+      <li><a href="https://www.simpletraffic.co?ref=philipsmith4">Adele</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/Tom-and-Jerry-Cowboy-Up-2022-STAGATV-COM.mp4">Download Tom & Jerry Cowboy Up 2022</a></li>
+      <li><a href="https://bigyshare.com/uploads/2022/01/Baahubali-The-Beginning-Noregret-com-ng.mp4"></a>BAHUBALI part 1</li>
+      <li><a href="https://down3.dnkiri.com/Kor/nkiri.com%20Baahubali%202%20The%20Conclusion%20(2017).mkv">Bahubali part 2</a></li>
+      <li><a href="https://c8.dnkiri.com/Holly/The.Lord.of.the.Rings.The.Fellowship.of.the.Rings.(NKIRI.COM).THEATRICAL.EDITION.2001.1080p.BrRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Lord of the rings part1</a></li>
+      <li><a href="https://c8.dnkiri.com/Holly/The.Lord.of.the.Rings.The.Two.Towers.(NKIRI.COM).2002.ExD.BrRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Lord of the rings part 2</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/10/Horror-Noire-2021-STAGATV-COM.mp4">Horror Noire download</a></li>
+      <li><a href="http://stagatvfiles.com/media/videos/verotika-2019-stagatv.com-480.mp4">Download Verotika horror movie</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/07/Army-of-the-Dead-2021-Full-Movie-STAGATV-COM.mp4">Download Army of the dead</a></li>
+      <li><a href="https://f1.dnkiri.com/Holly/Rogue.City.(NKIRI.COM).2020.BluRay.DOWNLOADED.FROM.NKIRI.COM.mkv">Download Rogue City</a></li>
+      <li><a href="https://c6.dnkiri.com/Holly/Mulan.(NKIRI.COM).2020.480p.WEB-DL.DOWNLOADED.FROM.NKIRI.COM.mkv">Download Mulan Chinese movie</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/08/On-Your-Mark-2021-Chinese-Movie-STAGATV-COM.mp4">Download on your mark Chinese movie </a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/11/Escape-From-Mogadishu-2021-Movie-STAGATV-COM.mp4">Download escape from Mogadishu Chinese</a></li>
+      <li><a href="https://c1.dnkiri.com/Bol/nkiri.com%20Dilwale%20(2015)%20hjuk.mkv">Download dilwale bollywood movie</a></li>
+      <li><a href="https://z3.dnkiri.com/Holly/Endless.Rain.(2021).KOREAN.DOWNLOADED.FROM.NKIRI.COM.mkv">Download endless rain Korean movie</a></li>
+      <li><a href="https://z7.dnkiri.com/Holly/Second.Life.(NKIRI.COM).2019.KOREAN.WEBRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Download second life korean movie</a></li>
+      <li><a href="https://d3.dnkiri.com/Kor/nkiri.com%20Chasing%20the%20Dragon%20II%20Wild%20Wild%20Bunch%20(2019).mkv">Download chasing the dragon</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/Ghosts-of-the-Ozarks-WEBRip-English-full-movie--HD.mp4">Download ghost of ghee Ozarks 2022</a></li>
+      <li><a href="https://z7.dnkiri.com/Holly/Free.Guy.(NKIRI.COM).2021.HDRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Download free guy 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/12/Resident-Evil-Welcome-to-Raccoon-City-2021-STAGATV-COM.mp4">Download Resident evil movie 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/Ghostbusters-Afterlife-2021-STAGATV-COM.mp4">Download ghostbusters(afterlife) 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/The-King-s-Daughter-2022-STAGATV-COM.mp4">Download the king's daughter 2022</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/Sex-Appeal-2022-STAGATV-COM.mp4">Download Sex Appeal 2022</a></li>
+      <li><a href="https://c4.dnkiri.com/Holly/Coco.(NKIRI.COM).2017.480p.BluRay.x264.DOWNLOADED.FROM.NKIRI.COM.mkv">Download Coco animation</a></li>
+      <li><a href="https://f3.dnkiri.com/Holly/Home.Sweet.Home.Alone.(NKIRI.COM).2021.WEBRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Download Home alone 2021</a></li>
+      <li><a href="https://c6.dnkiri.com/Holly/One.Night.In.Miami.(NKIRI.COM).2020.WEBRip.DOWNLOADED.FROM.NKIRI.COM.mkv">Download one night in miami</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/Smert-Telemarketera-WEBRip-English-full-movie--HD.mp4">Download Death of a telemarketer</a></li>
+      <li><a href="https://f3.dnkiri.com/Holly/Avengers.Infinity.War.(NKIRI.COM).2018.BluRay.DOWNLOADED.FROM.NKIRI.COM.mkv">Download avengers infinity war</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/Popovich-Road-to-Hollywood-WEBRip-English-full-movie--HD.mp4">Download Popvich Road to Hollywood 2022.</a></li>
+      <li><a href="https://appsgeyser.com/widgetdownload.php?widget=Game%20Earning%20Website_15224601">Stream movies online (download our app</a></li>
+      <li><a href="https://appsgeyser.com/widgetdownload.php?widget=Game%20Earning%20Website_15224601">Watch movies online</a></li>
+      <li><a href="http://www.moviesfiles.net./avimovies/Indemnity-WEBRip-English-full-movie--HD.avi">Download indemnity 2022</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/Kimi-WEBRip-English-full-movie--HD.mp4">Download Kimi 2022</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/Exorcist-Vengeance-WEBRip-English-full-movie--HD.mp4">Download Exorcist Vengeance 2022 horror</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/The-Ice-Age-Adventures-of-Buck-Wild-2022-STAGATV-COM.mp4">Ice age 2022 download (Adventures of Buck Wild)</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/The-Requin-2022-STAGATV-COM.mp4">The Requin 2022</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/Dracula-The-Original-Living-Vampire-2022-STAGATV-COM.mp4">Dracula the original living VAMPIRE 2022 download</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/08/The-Admiral-Roaring-Currents-2014-STAGATV-COM.mp4">The admiral roaring currents</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/08/The-Great-Battle-2018-STAGATV-COM.mp4">The great battle (Kingdom of Goguryeo download)</a></li>
+      <li><a href="https://z8.dnkiri.com/Holly/The.Witcher.Nightmare.of.the.Wolf.(NKIRI.COM).2021.NF.WEBRip.DOWNLOADED.FROM.NKIRI.COM.mkv">The Witcher Animation 2021 download</a></li>
+      <li><a href="http://176.31.104.133/downloads/The.Tomorrow.War.2021.007.Multi%20Audio.mp4?st=0qSALpSZ_wOHJJQ9ij9etA&e=1625454925">The tomorrow war download</a></li>
+      <li><a href="https://f6.dnkiri.com/Holly/John.Wick.(NKIRI.COM).2014.BluRay.DOWNLOADED.FROM.NKIRI.COM.mkv">John Wick download</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/12/Megaboa-2021-STAGATV-COM.mp4">Download Megaboa 2021 (snake)</a></li>
+      <li><a href="https://www.sabishare.com/file/NqLJwYTHg04-rumble-2021-netnaija-com-mp4">Download Rumble 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/11/Clifford-the-Big-Red-Dog-2021-STAGATV-COM.mp4">Clifford the big red dog download</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/09/Night-of-the-Animated-Dead-2021-STAGATV-COM.mp4">Night of The animated Dead 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/08/Mortal-Kombat-Legends-Battle-of-the-Realms-2021-STAGATV-COM.mp4">Mortal Kombat 2021 legends</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/The-Croods-2-A-New-Age-2020-STAGATV-COM.mp4">Download Frozen animation</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/09/How-to-Train-Your-Dragon-3-2019-STAGATV-COM.mp4">How to train your dragon (animation) download</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/08/Vivo-2021-STAGATV-COM.mp4">Download Vivo (animation)</a></li>
+      <li><a href="https://stagatvfiles.com/videos/uploads/2021/09/Peter-Rabbit-2-The-Runaway-2021-STAGATV-COM.mp4">Peter Rabbit 2 (download)</a></li>
+      <li><a href="http://www.moviesfiles.net./mobilemovieshd/The-Boss-Baby-Family-Business-BRRip-Hindi-full-movie--HD.mp4">Download animation boss baby</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/The-Commando-2022-STAGATV-COM.mp4">Download John Wick 2</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2022/01/John-Wick-Chapter-3-Parabellum-2019-STAGATV-COM.mp4">John Wick Chapter 3</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/12/Black-Widow-2021-HD-STAGATV-COM.mp4">Download black widow 2021</a></li>
+      <li><a href="https://stagatvcdn.com/videos/uploads/2021/07/President-Kuti-Latest-Yoruba-Movie-2021-STAGATV-COM.mp4">Download president kuti yoruba movie 2021</a></li>
+      <li><a href="http://stagatvfiles.com/media/videos/citation-2020-stagatv.com-480.mp4">Citation 2021 download nollywood movie</a></li>
+      <li><a href="https://dl.thenetnaija.com/v/15498.mp4">Download Odaran Yoruba movie 2022</a></li>
+      <li><a href="https://c1.dnkiri.com/Afri/NKIRI.COM%20Sugar%20Rush.mkv">Download Sugar Rush </a></li>
+      <li><a href="https://philipsmith6175.github.io/news.html">Seasonal movies</a></li>
+    </ul>
+
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+    </body>
+    </html>
