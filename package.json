@@ -4,7 +4,7 @@
   "description": "Game Earning Website.",
   "main": "index.html",
   "scripts": {
-    "start": "supervisor -s bot.js"
+    "start": "test"
   },
   "repository": {
     "type": "git",
