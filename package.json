@@ -2,7 +2,7 @@
   "name": "Philipsmith6175.github.io",
   "version": "1.0.2",
   "description": "Game Earning Website.",
-  "main": "./Leon/bot.js",
+  "main": "index.html",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
