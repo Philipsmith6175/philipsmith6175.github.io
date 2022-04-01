@@ -9,15 +9,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/philipsmith6175/philipsmith6175.github.io"
-  },
-  "keywords": [
-    "whatsapp",
-    "bot"
-  ],
-  "developer": "Philip Smith",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TOXIC-DEVIL/Leon/issues"
+  
+
   },
   "homepage": "https://github.com/philipsmith6175/philipsmith6175.github.io/index.html",
   "dependencies": {
