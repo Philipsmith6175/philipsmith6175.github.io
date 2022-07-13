@@ -1,192 +1,240 @@
 <!DOCTYPE html>
+<html>
 <head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 </style>
 </head>
-<body>
+<body class="w3-theme-l5">
 
-<div id="mySidenav" class="sidenav">
-<img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" width="250" height="250">
-       <p style="color:#0000FF">WELCOME TO 9JAHOTBLOG</a>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://9jahotblog.github.io">Home</a>
-  <a href="https://9jahotblog.github.io/entertainment/will.html">Entertainment, Facts & Stories</a>
-  <a href="https://9jahotblog.github.io/Articles/change-and-correction-of-names-by-mere-affidavit-is-no-longer-valid.html">Articles & News</a>
-  <a href="https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html">Forum, Discussions</a>
-  <a href="https://9jahotblog.github.io/Education/citizenship-topic.html">Education</a>
-  <a href="https://9jahotblog.github.io/documentary/animal-mixup.html">Documentary</p>
-  <a href="https://9jahotblog.github.io/aboutus.html">About Us</a>
-  <a href="https://9jahotblog.github.io/contact-us.html">Contact Us</a>
-  <a href="https://9jahotblog.github.io/pp.html">Privacy Policy</a>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
 </div>
 
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Demo Profile</h4>
+         <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p><p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button><div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      
+     
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Social Media template by w3.css</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+<div class="w3-half">
+              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
- 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+<div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+ <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
-   </body>
+</body>
 </html> 
+  
 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
 
-    <link rel="icon" type="image/png" href="assets/dgit-logo.png">
 
-    <link rel="stylesheet" href="styles.css" />
-    <title>DGITRONA - ADMIN DASHBOARD</title>
-  </head>
-  <body id="body">
-    <div class="container">
-      <nav class="navbar">
-        <div class="nav_icon" onclick="toggleSidebar()">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <div class="navbar__left">
-          <a class="active_link" href="#">Admin</a>
-          <a href="#">Settings</a>
-          <a href="#">Logs</a>
-        </div>
-        <div class="navbar__right">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <img width="30" src="hello.svg" alt="" />
-            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
-          </a>
-        </div>
-      </nav>
 
-      <main>
-        <div class="main__container">
-          <!-- MAIN TITLE STARTS HERE -->
 
-          <div class="main__title">
-            <img src="hello.svg" alt="" />
-            <div class="main__greeting">
-              <h1>Good Morning, RONA</h1>
-              <p>Last login: 09:33:28 - Saturday, 23rd September, 2021</p>
-            </div>
-          </div>
 
-          <!-- MAIN TITLE ENDS HERE -->
 
-          <!-- MAIN CARDS STARTS HERE -->
-          <div class="main__cards">
-            <div class="card">
-              <i
-                class="fa fa-user-o fa-2x text-lightblue"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Number of Employees</p>
-                <span class="font-bold text-title">2914</span>
-              </div>
-            </div>
 
-            <div class="card">
-              <i class="fa fa-calendar fa-2x text-lightblue" aria-hidden="true"></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Hour of Work</p>
-                <span class="font-bold text-title">32.1k</span>
-              </div>
-            </div>
 
-            <div class="card">
-              <i
-                class="fa fa-video-camera fa-2x text-lightblue"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Number of Leave</p>
-                <span class="font-bold text-title">811</span>
-              </div>
-            </div>
 
-            <div class="card">
-              <i
-                class="fa fa-thumbs-up fa-2x text-green"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Taxes Paid</p>
-                <span class="font-bold text-title">11.3k</span>
-              </div>
-            </div>
-          </div>
-          <!-- MAIN CARDS ENDS HERE -->
 
-          
-        <nav class="footer">
-          <div style="margin:2%; text-align: center;">Built by <a href="https://github.com/DanielDallas" target="_blank">Philip Smith</a> </div>
-        </nav>
-        
-      </main>
 
-      
+
+
+
+
+
+
+
+
+
+
+
