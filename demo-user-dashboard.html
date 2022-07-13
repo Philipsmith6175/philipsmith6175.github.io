@@ -1,4 +1,85 @@
 <!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+<img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" width="250" height="250">
+       <p style="color:#0000FF">WELCOME TO 9JAHOTBLOG</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://9jahotblog.github.io">Home</a>
+  <a href="https://9jahotblog.github.io/entertainment/will.html">Entertainment, Facts & Stories</a>
+  <a href="https://9jahotblog.github.io/Articles/change-and-correction-of-names-by-mere-affidavit-is-no-longer-valid.html">Articles & News</a>
+  <a href="https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html">Forum, Discussions</a>
+  <a href="https://9jahotblog.github.io/Education/citizenship-topic.html">Education</a>
+  <a href="https://9jahotblog.github.io/documentary/animal-mixup.html">Documentary</p>
+  <a href="https://9jahotblog.github.io/aboutus.html">About Us</a>
+  <a href="https://9jahotblog.github.io/contact-us.html">Contact Us</a>
+  <a href="https://9jahotblog.github.io/pp.html">Privacy Policy</a>
+</div>
+
+
+ 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   </body>
+</html> 
+
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -108,84 +189,4 @@
         
       </main>
 
-      <div id="sidebar">
-        <div class="sidebar__title">
-          <div class="sidebar__img">
-            <img src="assets/dgit-logo.png" alt="logo" style="width:15%; margin-right: 3%;"/>
-            <h3>DGITRONA v1.0.2</h3>
-          </div>
-          <i
-            onclick="closeSidebar()"
-            class="fa fa-times"
-            id="sidebarIcon"
-            aria-hidden="true"
-          ></i>
-        </div>
-
-        <div class="sidebar__menu">
-          <div class="sidebar_link active_menu_link">
-            <i class="fa fa-home"></i>
-            <a href="#">Dashboard</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-user-o"></i>
-            <a href="#">Administrators</a>
-          </div>
-          <h2>MANAGEMENT</h2>
-          <div class="sidebar_link">
-            <i class="fa fa-user-secret" aria-hidden="true"></i>
-            <a href="#">Admin Management</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-building-o"></i>
-            <a href="#">Company Management</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-wrench"></i>
-            <a href="#">Employee Management</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-archive"></i>
-            <a href="#">Warehouse</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-handshake-o"></i>
-            <a href="#">Contracts</a>
-          </div>
-          <h2>LEAVE</h2>
-          <div class="sidebar_link">
-            <i class="fa fa-question"></i>
-            <a href="#">Requests</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-sign-out"></i>
-            <a href="#">Leave Policy</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-calendar-check-o"></i>
-            <a href="#">Special Days</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-files-o"></i>
-            <a href="#">Apply for leave</a>
-          </div>
-          <h2>PAYROLL</h2>
-          <div class="sidebar_link">
-            <i class="fa fa-money"></i>
-            <a href="#">Payroll</a>
-          </div>
-          <div class="sidebar_link">
-            <i class="fa fa-briefcase"></i>
-            <a href="#">Paygrade</a>
-          </div>
-          <div class="sidebar__logout">
-            <i class="fa fa-power-off"></i>
-            <a href="#">Log out</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+      
