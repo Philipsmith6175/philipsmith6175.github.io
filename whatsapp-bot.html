@@ -1,0 +1,453 @@
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://lh3.googleusercontent.com/pw/AM-JKLXPa7fWJN4Teou0Fc9pBITH61w5fajuqdyC36I1e5rQLIqwZhFxN-VGlLvAyLmoyK9JnfQS5PWZAAcvqGTINQehP9zMBQP38n9RcjH_nbH2xhoQzlPepWmm8-gqghurLBKuPK8Ksl9Mqcd-0R62sIoD=s48-no" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+<img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" width="250" height="250">
+       <p style="color:#0000FF">WELCOME TO 9JAHOTBLOG</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://9jahotblog.github.io">Home</a>
+  <a href="https://9jahotblog.github.io/entertainment/will.html">Entertainment, Facts & Stories</a>
+  <a href="https://9jahotblog.github.io/Articles/change-and-correction-of-names-by-mere-affidavit-is-no-longer-valid.html">Articles & News</a>
+  <a href="https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html">Forum, Discussions</a>
+  <a href="https://9jahotblog.github.io/Education/citizenship-topic.html">Education</a>
+  <a href="https://9jahotblog.github.io/documentary/animal-mixup.html">Documentary</p>
+  <a href="https://9jahotblog.github.io/aboutus.html">About Us</a>
+  <a href="https://9jahotblog.github.io/contact-us.html">Contact Us</a>
+  <a href="https://9jahotblog.github.io/pp.html">Privacy Policy</a>
+</div>
+
+
+ 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   </body>
+</html> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to Create WhatsApp Bot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+
+ <div class="w3-content" style="max-width:1400px">
+
+ 
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>9JAHOT BLOG</b></h1>
+  <p>Welcome to the <span class="w3-tag">Hottest Blog🇳🇬</span></p>
+</header>
+
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+     <iframe title="vimeo-player" src="https://player.vimeo.com/video/697801635?h=ffaab885a6" width="300" height="300" frameborder="0" allowfullscreen></iframe>
+<p style="color:#0000FF">Today's Lesson! </p>
+<p style="color:#0000FF">TABLE OF CONTENTS!</p>
+<p style="color:#0000FF">- What is a WhatsApp Robot?</p>
+<p style="color:#0000FF">- What is it used for?</p>
+<p style="color:#0000FF">- Who created it? </p>
+<p style="color:#0000FF">- How can I create one for myself?</p>
+<p style="color:#0000FF">- What is a git?</p>
+<p style="color:#0000FF">- Can I sell it to others?</a>
+<p style="color:#0000FF">- Putting it to Practice.</p>
+
+   <p style="color:#0000FF">unit1:  WHAT IS A WHATSAPP ROBOT?</p>
+   A WhatsApp Robot is a chatbot that makes chatting fun & whatsapp very easy to use. Promotions, business, conversational marketing, sales.. e.t.c. Technically, WhatsApp robots come in different forms, many companies buy WhatsApp bot to help strengthen the bond of the customers to the organization. The organization may not be able to reach out to the customers in time, but WhatsApp bots come in handy in such terms.  
+   WhatsApp itself has an inbuilt special bot for special purposes created for Whatsapp business users so they can be able to manage their business with ease. It does not only contain a bot that replies instantly, but also a cart to make shopping more easier for customers. 
+    The bot am talking about here is (Asena) a repository on github that can be deployed to heroku & merged into your WhatsApp account, although Asena doesn't login to your account, but makes WhatsApp fun & easy to use. Let's see what it can do! 
+
+   <p style="color:#0000FF"> unit 2: USES OF WHATSAPP BOT</p>
+<p style="color:#0000FF">- It can download & upload songs within 2 secs. </p>
+<p style="color:#0000FF">- It can download & upload videos from Instagram, YouTube e.t.c within 3 secs..</p>
+<p style="color:#0000FF">- It can chat with your friends almost virtually like you do! It has an inbuilt "Eva" chatbot .</p>
+<p style="color:#0000FF">- It can style your texts to beautiful font images. </p>
+<p style="color:#0000FF">- It can kick a user out of a group. </p>
+<p style="color:#0000FF">- It can mute & unmute a group.</p>
+<p style="color:#0000FF">- Tracks your location, bans any user that sends unecesary spam links to your group, it can also spam messages.</p>
+<p style="color:#0000FF">- It can convert a sticker to photo.</p>
+<p style="color:#0000FF">- It can set a goodbye & welcome message for new visitors to your group.</p>
+<p style="color:#0000FF">- It can add, promote, demote any admin.</p>
+<p style="color:#0000FF">- It shows weather updates, measures your ping, get a link to user chat, & tag all admins. </p>
+<p style="color:#0000FF">- It can also Search Query on Wikipedia for any assistance on assignments you have.</p>
+<p style="color:#0000FF">- It translates messages & scans registered number on WhatsApp e.t.c.</p>
+
+<p style="color:#0000FF">unit3: WHO CREATED WHATSAPP BOT? </p>
+   The first ever userbot for Whatsapp was <p style="color:#0000FF"><a href="https://tr.wikipedia.org/wiki/Asena">Asena</a></p> which comes from Turkish mythology meaning a she wolf that plays an important role. 
+   It was created by <p style="color:#0000FF"><a href="https://t.me/fusuf">Yusuf Usta</a></p> and developed by <p style="color:#0000FF"><a href="https://t.me/phaticusthiccy">Phaticusthiccy</a></p>. He is the Co- Founder and only active developer on AsenaDev. Yusuf Usta coded base for whatsena & Phaticusthiccy developed it since 2020. According to the interview of Phaticusthiccy & I, As a result they moved Telegram UserBot topic to WhatsApp. They thought and said why don't we make the world's first WhatsApp UserBot?.
+Now Asena is available on WhatsApp & Telegram. 
+   Furthermore, "InxtaXen" Phaticusthiccy's personal project. World's first Userbot for Instagram will be published soon. It will use more WhatsAsena infrastructure, but yes there will be basic functions. Like, post, story etc..
+Phaticusthiccy learned how to code by himself after trying so many times, using JavaScript, Python, Emacs, Bash, Lua, and other 20 different languages..  Following the interview he said.... <p style="color:#0000FF">"I started with eva first. Eva my personal neural ai assistant like siri but there is more than that. And i can say it took about 3 years. This is how I learned languages ​​while coding Eva. Eva created by
+<p style="color:#0000FF">-JavaScript</p>
+<p style="color:#0000FF">-Golang</p>
+<p style="color:#0000FF">-Assembly</p>
+<p style="color:#0000FF">-Assembly X86</p>
+<p style="color:#0000FF">-Bash</p>
+<p style="color:#0000FF">-Lua</p>
+<p style="color:#0000FF">-Fortan</p>
+<p style="color:#0000FF">-Emacs - Lisp</p>
+<p style="color:#0000FF">-Make</p>
+<p style="color:#0000FF">-Ruby</p>
+<p style="color:#0000FF">-Perl</p>
+<p style="color:#0000FF">-Cheif</p>
+<p style="color:#0000FF">-Python 2-3</p>
+<p style="color:#0000FF">-LaTeX (for conversation)</p>
+<p style="color:#0000FF">-Fastai (for voice chat)</p>
+<p style="color:#0000FF">-Tensorflow (for Language processing)</p>
+<p style="color:#0000FF">-RGANI (my reverse gan Interpolation system).</p>
+Also am seventeen :-)". 
+"Eva update herself
+İts a neural AI
+She can fix or add new things to herself whatever she wanna."</p>
+   Eva is the chatbot inbuilt in WhatsAsena. Phaticusthiccy also revealed that someone tried to use Asena for robbery & WhatsAsena showed on national TV.  This is why there's strict license to the project on github, please read the license before using WhatsAsena. 
+According to him this happened because..
+
+<p style="color:#0000FF">"Previously WhatsAsena allowed Every action in WhatsApp. We chose this method because so users can be free. Free  in every sense. 
+Later they produced fake bots. But now WhatsAsena clones will not work.
+Already WhatsAsena has more than 136.000 user
+The closest fake bot to us has about 2000 users
+I don't care much".</p>
+
+Phaticusthiccy studies Mechatronics Engineering & claims that most of the attendees of the college are envious & pay little or no attention to him. He said.... 
+
+<p style="color:#0000FF">"Actually, no. I don't like believers. People only do things for their own benefit. It kills, insults, breaks hearts. they can't empathize. So I try to keep as few people around as I can. I'm going to pass away one day anyway, I just want to see what I left behind. I get as much information as I can, maybe someday "you were a good person" someone will say thank you for the things you do."</p>
+
+<p style="color:#0000FF">unit4: HOW TO CREATE WHATSAPP BOT</p>
+<p style="color:#0000FF">STEP 1=</p>Visit <p style="color:#0000FF"><a href="www.heroku.com">Heroku</a></p>
+& create an account. Enter your "first name, last name, email address, company name(Any name), Role (choose student), select your country & select a language (choose I use a different language) & click create account. 
+<img src="https://i.postimg.cc/4d28kbzD/createaccount.jpg" width="300" height="400"> </div>
+
+<p> A verification Email will be sent to you, click the link on your email & create a password. 
+Scroll down after reading the policies & select "I accept".  WELCOME TO HEROKU.</p>
+
+<p style="color:#0000FF">STEP 2=</p>Navigate to your profile section & click "account settings", scroll down to your API KEY, reveal it & copy the API KEY & keep it somewhere, you'll need it very soon. 
+<img src="https://i.postimg.cc/HLDsLZK0/Apikey.jpg" width="300" height="400">
+
+<p style="color:#0000FF">STEP 3=</p> Now what you want to do now is get a QR CODE, once you have the code you can scan it with your WhatsApp web & start using the bot. <p style="color:#0000FF">They're 3 ways to get a QR CODE. 
+1ST =</p>  Android user download "Termux" app on play store & place this code <p style="color:#0000FF">bash <(curl -L https://t.ly/qYqy)</p>
+It will show many lines of code. Like this! & it may show "do you want to continue y/n" just type y till it's done. 
+<img src="https://i.postimg.cc/HsbTh4jV/termux.jpg" width="300" height="400">
+
+<p style="color:#0000FF">Once it generates the QR code</p> you can scan on your WhatsApp web & move to the next step. After you've scanned it will show something like <p style="color:#0000FF">"ASENA;;;eyJjbGllbnRJRCI6IllhQ
+WdPamZRZ3Rr
+YUJhTWFXdjU2Znc9PSIsI
+nNlcnZlclRva2VuIjoiM
+UBFTU5QQ1V1NHlt
+UklUZ0l2VEU5
+YTVORHE
+0MkxjbS9XNm
+lxOXhuUzlIR2c2QX
+k0aFVpbjlWeGFFb
+25jVkR5eURXNXlRNm
+VsTmYxdXUzQWc9PSI
+sImNsaWVudFRva2VuI
+joiNF
+BoeWhUelVzNnE3b2s5
+VTR6Tm9ZYWVVL1hPRGp
+0THJsWGFTcUp
+uZHVzYz0iLCJlb
+mNLZXkiOiIwK05LRTh
+4RDBxZHE4cktqSk84a0
+RSV3JWdDNxL3h
+VOWtWMjFoZW1vND
+VFPSIsIm1hY0tleS
+I6Ik1KZHpHTis1
+bXRxM1FlSGF
+0VnkyY0dpWFhyYk
+VuOWd5M1orUU
+NxWHJ6ZWc9In0="</p>Copy this & put it somewhere you will need it soon .. 
+
+<p style="color:#0000FF">2ND=</p> If you're using PC 💻, run PowerShell as administrator & copy paste this..  <p style="color:#0000FF">Invoke-Expression
+ (New-Object System.Net.WebClient).
+DownloadString
+('https://gitlab.com/Quiec/whatsasena/
+-/raw/master/windows.ps1')</p> 
+it will generate a QR CODE. Scan it & it will show something like that ASENA session, copy it & put it somewhere you'll need it.
+
+<p style="color:#0000FF">NOTE: SCAN THE QR CODE TO THE PHONE YOU WANT TO USE BOT ON! IF YOU SCAN IT TO YOUR FRIEND'S PHONE THEN YOUR FRIEND WILL USE BOT. </p>
+
+<p style="color:#0000FF">3RD=</p>Incase both doesn't work, just <p style="color:#0000FF"><a href="https://repl.it/@phaticusthiccy/WhatsAsena-QR">VISIT HERE</a></p> Click the play button, verify you're not a robot & it will show QR CODE, scan on your WhatsApp Web & copy the ASENA SESSION sent to your number. 
+How do you scan qr code?? Visit WhatsApp & navigate to Link devices..
+<img src="https://i.postimg.cc/52c6H2QF/linkdevice.jpg" width="300" height="300">
+
+<p style="color:#0000FF">CLICK link a device. </p>
+
+<img src="https://i.postimg.cc/zB3JtsRr/link.jpg" width="300" height="300">
+
+<p style="color:#0000FF">Now scan the Qr you got from step 3,</p> the qr should be on another person's phone, probably your friend. 
+<img src="https://i.postimg.cc/vZBbZR36/qrcode.jpg" width=300" height="300">
+
+<p style="color:#0000FF">Your browser has to be in desktop site</p>for qr to show well.
+ Then you'll scan it with your own WhatsApp web. 
+<img src="https://i.postimg.cc/zGSK8g2f/scanqr.jpg" width="300" height="300">
+<p style="color:#0000FF">STEP 4=</p>
+
+<p style="color:#0000FF"><a href="https://github.com/phaticusthiccy/WhatsAsenaDuplicated">CLICK HERE</a></p>Please read all the warnings, disclaimer, & use of the project before you proceed. After then you can click Deploy to Heroku button. 
+<img src="https://i.postimg.cc/WzgwBbDL/deploytoheroku.jpg" width="300" height="300">
+
+ 
+<p style="color:#0000FF">Name your app with small letters..</p>
+<img src="https://i.postimg.cc/vZH5zvvd/name.jpg" width="300" height="400">
+
+<p style="color:#0000FF"> Paste the Asena Session.</p> ASENA;;;eyJjbGllbn......
+<img src="https://i.postimg.cc/TwQspZBF/asena.jpg" width="300" height="400">   
+
+<p style="color:#0000FF">You can decide to change the "Alive"</p> message when you type .alive to bot. 
+You can change it to.... Am alive & coded by(your name) or you can just 
+Leave it in default.
+
+<img src="https://i.postimg.cc/jdjj33Bv/alive.jpg" width="300" height="400">
+
+<p style="color:#0000FF">The handlers should only have full stop in it [.]</p>
+<img src="https://i.postimg.cc/Wp5NZ6tZ/handlers.jpg" width="300" height="400">
+
+<p style="color:#0000FF">I told you to keep an API key at step 2, copy paste it here...</p>
+<img src="https://i.postimg.cc/L5nrLP0k/apikeyy.jpg" width="300" height="400">
+
+<p style="color:#0000FF">General language is English so put EN in the line so your bot can speak. 
+Also re-input the name of the app you put in the first line of this page.</p>
+<img src="https://i.postimg.cc/Njk9W2pk/en.jpg" width="300" height="400">
+
+<p style="color:#0000FF"> Mute & Unmute is the message your bot sends to groups when it wants to
+Mute & unmute the group.</p> WORK TYPE: Private means bot will only work for you
+But public will work for others. When finished click Deploy. 
+Please keep refreshing the page wait for bot to deploy finish, you must 
+Have enough data. When done click manage app.. 
+<img src="https://i.postimg.cc/c4X6hGHF/mute.jpg" width="300" height="400">
+
+<p style="color:#0000FF">When done navigate to your dashboard click This icon & TURN ON BOT!</p>
+<img src="https://i.postimg.cc/JnNj4YQS/turnon.jpg" width="300" height="300">
+
+<p style="color:#0000FF">You can turn off bot same method.</p>
+<img src="https://i.postimg.cc/FzsXHRSc/turnoff.jpg" width="300" height="400">
+ 
+<p style="color:#0000FF">Then you're finished! Now what you have to do is start using BOT! just 
+Navigate to your WhatsApp & type .alive to your number.
+Output::</p>
+   <iframe title="vimeo-player" src="https://player.vimeo.com/video/697801635?h=ffaab885a6" width="300" height="300" frameborder="0" allowfullscreen></iframe>
+
+<p style="color:#0000FF">unit 5: What is a git? </p> 
+
+A git is a software that is mostly active & must be maintained by the developer.  It is for open source projects....Anyone can fork, clone or request for a git from the developer. 
+   You must be wondering why Asena doesn't have some features the bot in that video has. Its because different developers make gits in different taste.  Sequelling to bot gits, features can vary, my bot git can be used to create a bot on heroku & I can name it whatever I want & also add a few features to it.  
+    Phaticusthiccy & Yusuf chose to name their bot git "Asena" & they chose suitable features for the bot. Another person can do more as this is a digital century. So if you want different bot gits you can contact developers for their gits, actually many don't give because users tend to clone their file & some other users use it for special purposes.   
+    Nevertheless, the git used to create the bot in that video is Leon. Userbot created by 
+<p style="color:#0000FF"><a href="www.github.com/TOXIC-DEVIL">Toxic Devil</a></p>, My best friend. Feel free to contact him for Leon git. He has created multiple gits, like WhatsAlexa. With AI voice chat. & he is very strict with his git disclaimers. 
+    If you want to still try other bot gits like Philsmagic, QueenAmdi, e.t.c. <a href="https://Instagram.com/the_real_philip617">Request For It</a>. 
+
+
+<p style="color:#0000FF">unit6: Can I sell it to Others??</p> 
+      Don't even try it, bot gits are open source projects & most of them are licensed, you are responsible for every trial & problems you face thereafter. Since the user & the git creator didn't sell it to you, why do you want to sell it to others? Just share this post, at least that would be better. 
+    Userbot is Open Source software open to development. 
+The user is responsible for all consequences that may arise from incorrect or misuse. 
+Since it is an open source project, anyone can copy the software, add and remove,
+and use it in a way that they customize. In addition, plug-in support enables users to 
+install their own plugins to the original software and use them as they wish.
+Using the bot out of purpose will explicitly ban you.
+Usage is entirely the user's responsibility,  Userbot is an 
+infrastructure only. Just as the operating system is not responsible 
+for the work done with the programs that are installed later, Git creator
+is not responsible for the usage purpose and method of the users.
+Marketing Bot GIT you don't own for money, making it available or having any material value
+ıt is strictly forbidden to offer it for sale with anything. All legal investigations that may arise
+the user is responsible.
+
+     <p style="color:#0000FF"> Thank you for staying with me throughout, more helpful discussions like this coming up!! Sharing is caring, please share this writeup. DON'T forget to drop your comment below</p>
+
+</div>
+
+<a href="https://chat.whatsapp.com/CY1ekNLBsue1K7yDNv0RWb"> CLICK HERE TO JOIN OUR WHATSAPP GROUP</a>
+</div>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>9JAHOTBLOG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                     
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+  
+<div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Share This Post</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="https://www.instagram.com/the_real_philip617"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          <a href="https://msng.link/o/?kolade_ogun2019=sc"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+          <a href="https://pinterest.com/pin/create/button/?url=https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html&media=&description=How%20to%20create%20a%20WhatsApp%20Robot%20(Helps%20with%20assignments),%20Full%20tutorial%20%F0%9F%98%B3%F0%9F%98%B1"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+          <a href="https://twitter.com/intent/tweet?url=https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html&text=How%20to%20create%20a%20WhatsApp%20Robot%20(Helps%20with%20assignments),%20Full%20tutorial%20%F0%9F%98%B3%F0%9F%98%B1"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <a href="https://api.whatsapp.com/send?text=How%20to%20make%20a%20WhatsApp%20Robot(Helps%20with%20assignments)%2C%20full%20tutorial%20%F0%9F%98%B3%F0%9F%98%B1%0Ahttps%3A%2F%2F9jahotblog.github.io%2Fdiscussions%2Fhow-to-create-whatsapp-robot.html"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+          <a href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://9jahotblog.github.io/discussions/how-to-create-whatsapp-robot.html%0AHow%20to%20create%20a%20WhatsApp%20Robot%20(Helps%20with%20assignments),%20Full%20tutorial%20%F0%9F%98%B3%F0%9F%98%B1"><i class="fa fa-envelope" w3-hover-opacity"></i></a>
+          <a href="https://xn--r1a.link/share/url?url=https%3A%2F%2F9jahotblog.github.io%2Fdiscussions%2Fhow-to-create-whatsapp-robot.html&text=How%20to%20create%20a%20functional%20WhatsApp%20Robot%20with%20features.%20Full%20tutorial%2C%20it%20works%20%F0%9F%98%B3%F0%9F%98%B1"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+        </div>
+      </div>
+      <hr>
+
+<!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Trending Now (Click Image)</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/discussions/what-is-autism.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="9jahotblog" class="w3-left w3-margin-right" style="width:100px"></a>
+        <span class="w3-large">WHAT IS AUTISM??</span><br>
+        <span>Autism or autism spectrum disorder is a broad term used to describe a group of neurodevelopmental conditions, these conditions........</span>
+      </li>  
+     <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/discussions/what-is-affiliate-marketing.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px"></a>
+   <span class="w3-large">AFFILIATE MARKETING</span><br>
+        <span><p style="color:#0000FF">WHAT IS AFFILIATE MARKETING?</p>
+It is a simple business model that involves promoting other people's products or services and getting a paid commission for doing so......
+</span>
+      </li>   
+      <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/discussions/the-big4-road-financial-freedom.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="9jahotblog" class="w3-left w3-margin-right" style="width:100px"></a>
+        <span class="w3-large">THE BIG4 LEGIT WAYS TO FINANCIAL FREEDOM. </span><br>
+        <span>Let's Start with CRYPTOCURRENCY, cryptocurrency was invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was released as open-source software.  While Bitcoin may have been the first major cryptocurrency to hit the market – it debuted in 2009 – many others have become highly popular, even if not quite as large as the original....
+ </span>
+      </li>  
+       <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/discussions/the-big4-road-financial-freedom-us-bank-stocks.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="9jahotblog" class="w3-left w3-margin-right" style="width:100px"></a>
+        <span class="w3-large">THE BIG4 LEGIT WAYS TO FINANCIAL FREEDOM continuation...... </span><br>
+        <span>The concept of bank stocks can be quite confusing to those that do not take time to study it and understand. Here, I will be explaining bank stocks like I would to a 10-year-old.......
+ </span>
+      </li>  
+      <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/Education/citizenship-topic.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="9jahotblog" class="w3-left w3-margin-right" style="width:100px"></a>
+        <span class="w3-large">Citizenship Education Full Topic</span><br>
+        <span>Definition, Rights, Limits, who is a citizen? 6 things you don't know about acquiring citizenship.</span>
+      </li>  
+      <li class="w3-padding-16">
+        <a href="https://9jahotblog.github.io/Articles/change-and-correction-of-names-by-mere-affidavit-is-no-longer-valid.html"><img src="https://i.postimg.cc/nMb0WWtr/9jahotblog.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px"></a>
+   <span class="w3-large">Change & Correction of names by mere Affidavit is no longer Valid</span><br>
+        <span>By Jerome Kalu. For instance, when one loses a Sim Card, certain details about the person is required,......</span>
+      </li>   
+      </ul>
+  </div>
+  <hr> 
+
+
+<script src="https://cdn.fastcomments.com/js/embed.min.js"></script>
+<div id="fastcomments-widget"></div>
+<script>
+    FastCommentsUI(document.getElementById('fastcomments-widget'), {
+        tenantId: 'AC6VPRnrDyH'
+    });
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38V179JCWD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38V179JCWD');
+</script>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://9jahotblog.github.io/Articles/change-and-correction-of-names-by-mere-affidavit-is-no-longer-valid.html">Previous »</button></a>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="https://9jahotblog.github.io/Education/citizenship-topic.html">Next »</button></a>
+  <p>Powered by <a href="https://Instagram.com/the_real_philip617" target="_blank">Philip Smith</a></p>
+</footer>
+</body>
+</html>
+</div>
+
