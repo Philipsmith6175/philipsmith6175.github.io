@@ -3,7 +3,7 @@
 <HEAD>
 <TITLE>SQUAD</TITLE>
 <!-- bootstrap -->
-<link href="https://checkout.squadco.com/widget/squad.min.js" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </HEAD>
 <BODY>
@@ -46,7 +46,7 @@ function SquadPay() {
     onClose: () => console.log("Widget closed"),
     onLoad: () => console.log("Widget loaded successfully"),
     onSuccess: () => console.log(`Linked successfully`),
-    key: "pk_e33e50923383100d429c3b24615b274008862fa8",
+    key: "sandbox_pk_2015ac291237d86e477e277c8ce6b333576f1856763c",
     //Change key (test_pk_sample-public-key-1) to the key on your Squad Dashboard
     email: document.getElementById("email-address").value,
     amount: document.getElementById("amount").value * 100,
