@@ -1,174 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hack FL</title>
-
-    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cinema Club</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header class="container">
-        <div class="logo">
-            <a href="index.html">HACK FL</a>
-        </div>
-        <nav class="navbar main-menu" role="navigation">
-            <!-- Menu button for mobile display -->
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" type="button">
-                    <i class="fa fa-bars fa-2x"></i>
-                </button>
-            </div>
+	<header class="l-header theme-margin">
+		<nav class="main-nav navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<i class="fa fa-film"></i> CinemaClub
+					</a>
+				</div>
 
-            <!-- Navigation links -->
-            <div class="collapse navbar-collapse">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/favourites">My movies</a></li>
+					</ul>
 
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="index.html">
-                            <i class="fa fa-home"></i> Home
-                        </a>
-                    </li>
-                    <li >
-                        <a href="upload.html">
-                            <i class="fa fa-upload"></i> Upload
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /navbar-collapse -->
-        </nav>
-    </header>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<button type="submit" class="btn btn-default">Find</button>
+					</form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header><!-- /header -->
 
-    <div class="main-content container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 1</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="ubl-portfolio-65" class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 2</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="ubl-portfolio-64" class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 3</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 1</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="ubl-portfolio-65" class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 2</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="ubl-portfolio-64" class="col-md-4 col-sm-6 m-b-30">
-                <div class="item">
-                    <a href="#" class="pop">
-                        <img class="img-responsive" src="http://placehold.it/360x360">
-                        <div class="overlay">
-                            <div class="item-title text-center">
-                                <h4 class="">Item 3</h4>
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="l-container container">
+		<section class="main movie-page">
+			<h2>Marsian, The <a href="#" title="Add to favourites"><i class="fa fa-heart-o"></i></a></h2>
+			<div class="row">
+					<div class="col-md-6 col-sm-12 m-images-composite">
+						<img src="images/01.jpg">	
 
-    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                    </button>
-                    <img src="" class="imagepreview" style="width: 100%;">
-                </div>
+						<ul class="l-list-inline l-list-col-3">
+							<li><a href="#"><img src="images/02.jpg" alt="02"></a></li>
+							<li><a href="#"><img src="images/03.jpg" alt="02"></a></li>
+							<li><a href="#"><img src="images/01.jpg" alt="02"></a></li>
+						</ul>
+					</div>
+					
+					<div class="col-md-6 col-sm-12">
+						<ul class="l-list m-stats-list">
+							<li>
+								<span class="stat-name">Budget</span>
+								<span class="stat-value">$55000000</span>
+							</li>
+							<li>
+								<span class="stat-name">Budget</span>
+								<span class="stat-value">$55000000</span>
+							</li>
+							<li>
+								<span class="stat-name">Budget</span>
+								<span class="stat-value">$55000000</span>
+							</li>
+							<li>
+								<span class="stat-name">Budget</span>
+								<span class="stat-value">$55000000</span>
+							</li>
+							<li>
+								<span class="stat-name">Rating</span>
+								<span class="stat-value">6.1 <i class="fa fa-star"></i></span>
+							</li>
+						</ul>
+					</div>
+			</div>
 
-                <div class="modal-footer">
-                    <button class="btn btn-danger">
-                        <i class="fa fa-cancel"></i> Delete
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+			<section class="l-description">
+				<h3>Description:</h3>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<p>
+							In the aftermath of a family tragedy, an aspiring author is torn between love for her childhood friend and the temptation of a mysterious outsider. Trying to escape the ghosts of her past, she is swept away to a house that breathes, bleeds… and remembers.
+						</p>
+					</div>
+				</div>
+			</section> <!-- /l-description -->
 
-    <footer id="footer" class="container">
-        <hr>
-        <div class="text-center">
-            &copy; 2017 <a href="#">Hack FL</a>
-        </div>
-    </footer>
+			<section class="l-credits">
+				<h3>Credits:</h3>
+				<div class="row">
+					<ul class="l-list m-cards-list">
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+						<li>
+							<div class="col-md-2 col-sm-4 image-card">
+								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
+								<p class="card-subtitle">Some role</p>
+								<img src="images/04.jpg" alt="04">
+							</div>
+						</li>
+					</ul>
+				</div>	
+				<a href="#" class="text-center">Show All</a>
+			</section> <!-- /l-credits -->
 
-    <script src="assets/libs/jquery/dist/jquery.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="assets/js/app.js"></script>
+			<section class="l-video">
+				<h3>Video:</h3>
+				<div class="row">
+					<ul class="l-list m-cards-list">
+						<li>
+							<div class="image-card col-md-6 com-sm-12">
+								<p class="card-title">Trailer</p>
+								<iframe style="width: 100%; height: 350px;" frameborder="0"
+										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
+								</iframe>
+							</div>
+						</li>
+						<li>
+							<div class="image-card col-md-6 com-sm-12">
+								<p class="card-title">Trailer</p>
+								<iframe style="width: 100%; height: 350px;" frameborder="0"
+										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
+								</iframe>
+							</div>
+						</li>
+						<li>
+							<div class="image-card col-md-6 com-sm-12">
+								<p class="card-title">Trailer</p>
+								<iframe style="width: 100%; height: 350px;" frameborder="0"
+										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
+								</iframe>
+							</div>
+						</li>
+						<li>
+							<div class="image-card col-md-6 com-sm-12">
+								<p class="card-title">Trailer</p>
+								<iframe style="width: 100%; height: 350px;" frameborder="0"
+										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
+								</iframe>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section> <!-- /l-video -->
+		</section>
+	</div>
+
+	<footer class="l-footer text-center">
+		<p>Created by Trofimovich Eugene, 2015 | <a href="mailto:eugene.trofimovich@gmail.com?subject=cinema-club-feedback" "Enter something :)">email me</a></p>
+		<p>Project uses API from <a href="#">themoviedb.org</a></p>
+	</footer> <!-- /footer -->
 </body>
-
 </html>
