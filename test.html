@@ -1,192 +1,319 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cinema Club</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<header class="l-header theme-margin">
-		<nav class="main-nav navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">
-						<i class="fa fa-film"></i> CinemaClub
-					</a>
-				</div>
+<!DOCTYPE html> 
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="/favourites">My movies</a></li>
-					</ul>
+<html lang="en"> 
 
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="">
-						</div>
-						<button type="submit" class="btn btn-default">Find</button>
-					</form>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</header><!-- /header -->
+  
 
-	<div class="l-container container">
-		<section class="main movie-page">
-			<h2>Marsian, The <a href="#" title="Add to favourites"><i class="fa fa-heart-o"></i></a></h2>
-			<div class="row">
-					<div class="col-md-6 col-sm-12 m-images-composite">
-						<img src="images/01.jpg">	
+<head> 
 
-						<ul class="l-list-inline l-list-col-3">
-							<li><a href="#"><img src="images/02.jpg" alt="02"></a></li>
-							<li><a href="#"><img src="images/03.jpg" alt="02"></a></li>
-							<li><a href="#"><img src="images/01.jpg" alt="02"></a></li>
-						</ul>
-					</div>
-					
-					<div class="col-md-6 col-sm-12">
-						<ul class="l-list m-stats-list">
-							<li>
-								<span class="stat-name">Budget</span>
-								<span class="stat-value">$55000000</span>
-							</li>
-							<li>
-								<span class="stat-name">Budget</span>
-								<span class="stat-value">$55000000</span>
-							</li>
-							<li>
-								<span class="stat-name">Budget</span>
-								<span class="stat-value">$55000000</span>
-							</li>
-							<li>
-								<span class="stat-name">Budget</span>
-								<span class="stat-value">$55000000</span>
-							</li>
-							<li>
-								<span class="stat-name">Rating</span>
-								<span class="stat-value">6.1 <i class="fa fa-star"></i></span>
-							</li>
-						</ul>
-					</div>
-			</div>
+    <meta charset="UTF-8" /> 
 
-			<section class="l-description">
-				<h3>Description:</h3>
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<p>
-							In the aftermath of a family tragedy, an aspiring author is torn between love for her childhood friend and the temptation of a mysterious outsider. Trying to escape the ghosts of her past, she is swept away to a house that breathes, bleeds… and remembers.
-						</p>
-					</div>
-				</div>
-			</section> <!-- /l-description -->
+    <meta name="viewport" content= 
 
-			<section class="l-credits">
-				<h3>Credits:</h3>
-				<div class="row">
-					<ul class="l-list m-cards-list">
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-						<li>
-							<div class="col-md-2 col-sm-4 image-card">
-								<p class="card-title"><a href="#">Mia Vaskovska</a></p>
-								<p class="card-subtitle">Some role</p>
-								<img src="images/04.jpg" alt="04">
-							</div>
-						</li>
-					</ul>
-				</div>	
-				<a href="#" class="text-center">Show All</a>
-			</section> <!-- /l-credits -->
+        "width=device-width, initial-scale=1.0" /> 
 
-			<section class="l-video">
-				<h3>Video:</h3>
-				<div class="row">
-					<ul class="l-list m-cards-list">
-						<li>
-							<div class="image-card col-md-6 com-sm-12">
-								<p class="card-title">Trailer</p>
-								<iframe style="width: 100%; height: 350px;" frameborder="0"
-										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
-								</iframe>
-							</div>
-						</li>
-						<li>
-							<div class="image-card col-md-6 com-sm-12">
-								<p class="card-title">Trailer</p>
-								<iframe style="width: 100%; height: 350px;" frameborder="0"
-										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
-								</iframe>
-							</div>
-						</li>
-						<li>
-							<div class="image-card col-md-6 com-sm-12">
-								<p class="card-title">Trailer</p>
-								<iframe style="width: 100%; height: 350px;" frameborder="0"
-										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
-								</iframe>
-							</div>
-						</li>
-						<li>
-							<div class="image-card col-md-6 com-sm-12">
-								<p class="card-title">Trailer</p>
-								<iframe style="width: 100%; height: 350px;" frameborder="0"
-										src="http://www.youtube.com/embed/<%= key %>?autoplay=0">
-								</iframe>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section> <!-- /l-video -->
-		</section>
-	</div>
+    <meta http-equiv="X-UA-Compatible" 
 
-	<footer class="l-footer text-center">
-		<p>Created by Trofimovich Eugene, 2015 | <a href="mailto:eugene.trofimovich@gmail.com?subject=cinema-club-feedback" "Enter something :)">email me</a></p>
-		<p>Project uses API from <a href="#">themoviedb.org</a></p>
-	</footer> <!-- /footer -->
-</body>
+        content="ie=edge" /> 
+
+    <title>BOOTCAMP</title> 
+
+    <link rel="stylesheet" href="styles.css" /> 
+
+    <link rel="stylesheet" href= 
+"https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+
+        integrity= 
+"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+
+        crossorigin="anonymous" /> 
+
+</head> 
+
+  
+
+<body> 
+
+    <div class="container"> 
+
+  
+
+        <!-------- Creating Navbar --------->
+
+        <nav> 
+
+            <a href="#">BOOTCAMP</a> 
+
+            <div class="navbar"> 
+
+                <ul> 
+
+                    <li><a href="index.html">Home</a></li> 
+
+                    <li><a href="#">Courses</a></li> 
+
+                    <li><a href="#">About</a></li> 
+
+                    <li><a href="#">Contact</a></li> 
+
+                </ul> 
+
+            </div> 
+
+        </nav> 
+
+  
+
+        <!--------- Creating Banner -------->
+
+        <div class="main-banner"> 
+
+            <img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20211022104311/coding.jpeg"
+
+                alt="banner" /> 
+
+        </div> 
+
+  
+
+        <!-------- Courses or services ------->
+
+        <section class="service"> 
+
+            <h1>Courses</h1> 
+
+            <div class="col"> 
+
+                <i class="fab fa-algolia fa-3x ip"></i> 
+
+                <h3>Web Designing</h3> 
+
+                <p> 
+
+                    If you are looking for a way to  
+
+                    use your artistic side, web design  
+
+                    is a great way to do it.In today's  
+
+                    world, learning how to design  
+
+                    websites can be an incredibly useful  
+
+                    skill. 
+
+                </p> 
+
+  
+
+                <a href="#">Know More</a> 
+
+            </div> 
+
+  
+
+            <div class="col"> 
+
+                <i class="fas fa-code fa-3x ip"></i> 
+
+                <h3>Web Development</h3> 
+
+                <p> 
+
+                    Web development gives you the  
+
+                    opportunity to express yourself  
+
+                    creatively on the internet. 
+
+                    Fortunately, the high demand,  
+
+                    easy-to-learn, fun-to-experience 
+
+                    life. 
+
+                </p> 
+
+  
+
+                <a href="#">Know More</a> 
+
+            </div> 
+
+  
+
+            <div class="col"> 
+
+                <i class="fab fa-android fa-3x ip"></i> 
+
+                <h3>Android</h3> 
+
+                <p> 
+
+                    By learning Android Development,  
+
+                    you give yourself the best possible  
+
+                    chance to reach any career goals you  
+
+                    set. Once you get started, within no  
+
+                    time, you'll land in your dream job. 
+
+                </p> 
+
+  
+
+                <a href="#">Know More</a> 
+
+            </div> 
+
+        </section> 
+
+  
+
+        <section class="about"> 
+
+            <h1>Why choose us?</h1> 
+
+            <img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20211022104311/coding.jpeg"
+
+                alt="about us" /> 
+
+            <p> 
+
+                In today’s digital world, when there  
+
+                are thousands of online platforms  
+
+                (maybe more than that!) available over  
+
+                the web, it becomes quite difficult for  
+
+                students to opt for a quality, relevant  
+
+                and reliable platform for themselves. 
+
+                BOOTCAMP will help you excel in your  
+
+                choice of domain by giving industry  
+
+                equivalent experience. 
+
+            </p> 
+
+  
+
+            <a href="#">More</a> 
+
+        </section> 
+
+  
+
+        <section id="contact"> 
+
+            <div class="services-info"> 
+
+                <h1>Get in<span id="blue">Touch</span></h1> 
+
+                <p> We are Available</p> 
+
+            </div> 
+
+  
+
+            <div class="contact-row"> 
+
+                <div class="contact-left-col"> 
+
+                    <div class="form"> 
+
+                        <input type="text" name="" 
+
+                            placeholder="E-mail"> 
+
+                        <input type="text" name="" 
+
+                            placeholder="Subject"><br> 
+
+                        <textarea rows="10" cols="40" 
+
+                            placeholder="Message"> 
+
+                        </textarea> 
+
+                        <br>  
+
+                        <button class="c_btn"> 
+
+                            Send 
+
+                        </button> 
+
+                    </div> 
+
+                </div> 
+
+  
+
+                <div class="contact-right-col"> 
+
+                    <h1> 
+
+                        <i class="fa fa-envelope" 
+
+                            aria-hidden="true"></i> E-mail 
+
+                    </h1> 
+
+                    <p>geek@gmail.com</p><br> 
+
+                    <h1> 
+
+                        <i class="fa fa-phone" 
+
+                            aria-hidden="true"></i> Mobile 
+
+                    </h1> 
+
+                    <p>8212341487, 9080140989</p> 
+
+                    <br> 
+
+                    <h1> 
+
+                        <i class="fa fa-location-arrow" 
+
+                            aria-hidden="true"></i> Address 
+
+                    </h1> 
+
+                    <p> Noida Sector 136<br> 
+
+                        Metro Pillar- 237 
+
+                    </p> 
+
+                </div> 
+
+            </div> 
+
+        </section> 
+
+<footer> 
+
+            <small>Copyright © 2021 || Designed by Philip
+
+            </small> 
+
+        </footer> 
+
+    </div> 
+
+</body> 
+
+  
+
 </html>
