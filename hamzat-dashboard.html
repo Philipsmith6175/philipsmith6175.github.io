@@ -491,28 +491,25 @@ Link example: Full Link
       </div>
       <br>
       
-<!--Exoclick video ad-->
-<script async type="application/javascript" src="https://www.videosprofitnetwork.com/watch.xml?key=3895ea9eed16d6863355c4a66a7184c9"></script> 
- <ins class="adsbyexoclick" data-zoneid="4779932"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
+<html>
+  <head></head>
+  <body>
+    <script class="amp-inline" src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=MY_API_KEY&version=9.0.14" data-defaults='{"media":{"src":"VfE.mp4"}}'></script>
+    <div class="amp-inline" data-src="https://www.videosprofitnetwork.com/watch.xml?key=3895ea9eed16d6863355c4a66a7184c9"></div>
+    <div
+      class="amp-inline"
+      id="player2"
+      data-autoplay="muted"
+      data-src="https://www.videosprofitnetwork.com/watch.xml?key=3895ea9eed16d6863355c4a66a7184c9"
+      data-poster="my poster URL.jpg"
+      data-time="10"
+      data-width="318"
+      data-height="178">
+    </div>
+  </body>
+</html>
 
-<!--video slider-->
-<body>
-<script type="application/javascript" src="https://www.videosprofitnetwork.com/watch.xml?key=3895ea9eed16d6863355c4a66a7184c9"></script>
-<script type="application/javascript">
-var adConfig = {
-    "idzone": 4779938,
-    "frequency_period": 0,
-    "close_after": 0,
-    "on_complete": "repeat",
-    "branding_enabled": 1,
-    "screen_density": 25,
-    "cta_enabled": 1
-};
-ExoVideoSlider.init(adConfig);
-</script>
-</body>
-    
+
     <!-- Middle Column -->
     <div class="w3-col m7">
     
